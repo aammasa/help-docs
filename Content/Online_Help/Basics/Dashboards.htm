@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Web_Light_Theme" data-mc-search-type="Stem" data-mc-help-system-file-name="help.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-searchable="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="description" content="Description of dashboard widgets, which display project data." />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://prod.projectsightapp.trimble.com/Web/Web%20Help%20Freemium/Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <meta charset="utf-8" /><title>Dashboards</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <style>img.App-Icon
+{
+	width: 160px;
+	height: auto;
+}
+
+.App-Links
+{
+	display: none !important;
+}
+
+</style>
+        <link href="../../Resources/Stylesheets/Main-Styles.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.remove-highlight-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('https://prod.projectsightapp.trimble.com/Web/Web%20Help%20Freemium/Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://prod.projectsightapp.trimble.com/Web/Web%20Help%20Freemium/Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-5RLCN7BLZC">
+        </script>
+        <script>/* <![CDATA[ */
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-5RLCN7BLZC');
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="complementary" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="Main navigation and search" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1624px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="Dashboards.htm#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Basics.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="Dashboards.htm#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Topics" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Topics</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="NoScroll">
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_Fixed_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="4" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                            </div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy topicToolbarProxyFixed _Skins_Web_Top_Navigation_Topic_Toolbar mc-component nocontent" style="float: right; margin-right: 26px;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all sections" title="Expand all sections" data-state1-title="Expand all sections">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Expand all">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie remove-highlight-button" title="Remove highlighting from search terms">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contentBody" style="margin-top: 60px;">
+                                        <div class="row collapse">
+                                            <div class="sideContent" style="max-width: 300px;">
+                                                <div class="Container" style="display: block; background-color: #f3f3f7; box-shadow: none; margin-left: 10px; margin-right: 10px; margin-bottom: 20px; padding: 6px 8px 6px 12px;" id="search-tips">
+                                                    <p style="font-size: 14px; color: var(--HeadingMain);">
+                                                        <img src="../../Resources/Images/Common/Icon-Lightbulb-Solid.svg" alt="Lightbulb icon" /> Search tips</p>
+                                                    <ul style="margin-left: 20px;">
+                                                        <li>To search in a subset of topics, select <img src="../../Resources/Images/Common/Skin-Filter.png" alt="Filter button" style="vertical-align: middle;" /> in the search field and select a filter.</li>
+                                                        <li data-mc-conditions="Primary.Freemium">To search for a specific word or phrase, add quotation marks around it (example:&#160;<span class="Italics">"team member"</span>) in the search field.</li>
+                                                        <li>To remove highlighting on the search terms in a topic, select <img src="../../Resources/Images/Common/Search-Remove-Highlight-Button.png" alt="Remove highlight button" class="BottomAlign" />.</li>
+                                                        <li>To search within a topic, select <img src="../../Resources/Images/Common/Search-Topic-Expand.png" alt="Expand" style="vertical-align: middle;" />, press Ctrl+F, and enter the search term.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="Container App-Links" style="text-align: center; margin: 0px 0px 0px 20px; width: 260px;" data-mc-conditions="Snippet.A">
+                                                    <h2 style="margin-top: 6px; margin-bottom: 14px;">ProjectSight Mobile</h2>
+                                                    <p>Take ProjectSight's cloud-based construction project management software with you in the field on your phone or tablet.</p>
+                                                    <p><a href="https://apps.apple.com/us/app/projectsight/id1503528067" target="_blank"><img src="../../Getting-Started/Images/App-Store_180x53.png" alt="App store" class="App-Icon" style="margin-bottom: 2px;width: 180;height: 53;" /></a> <a href="https://play.google.com/store/apps/details?id=com.trimble.gccm.projectsight3&amp;hl=en_US" target="_blank"><img src="../../Getting-Started/Images/Google-Play_180x53.png" alt="App store" class="App-Icon" style="margin-bottom: 6px;width: 180;height: 53;" /></a></p>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <p class="ContentBadge" style="background-color: #b7b9c3; color: #000000;" data-mc-conditions="Snippet.C">Free version</p>
+                                            </p>
+                                            <div role="main" id="mc-main-content">
+                                                <h1>Dashboards</h1>
+                                                <p><a name="aanchor35"></a>
+                                                    <MadCap:concept term="Projects" />The project dashboard, which is personal to each user, displays widgets with information from the items that you have access to.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To open the dashboard</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <ul>
+                                                            <li>In the project menu, select <span class="Bold">Home</span>.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <hr color="#bfbfc6" width="auto" size="0" align="center" />
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownSection"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotSection MCDropDownHotSpot_ MCDropDownHotSpot_Section MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="14" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="types"></a><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotSection MCDropDownHotSpot_ MCDropDownHotSpot_Section" href="Dashboards.htm#" aria-expanded="false">System dashboard widgets</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <!--Add to sections that have more than one dropdown; js file is linked in the master page-->
+                                                        <div class="ExpandButton" title="Expand or collapse all content in this section">
+                                                            <img src="Dashboards.htm" alt="" />
+                                                        </div>
+                                                        <p>Several system dashboard widgets are available. You can also add <a href="Dashboards.htm#custom-view-widgets">custom view widgets</a> based on your custom views.</p>
+                                                        <h3>Assigned items</h3>
+                                                        <p>The following widgets are for assigned items:</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Overdue Items:</span> The assigned items, grouped by type, that are overdue.</li>
+                                                            <li><span class="Bold">Due Today Items:</span> The assigned items, grouped by type, that are due today.</li>
+                                                            <li><span class="Bold">Due in Next 7 Days:</span> The assigned items, grouped by type, that are due in the next 7 days.</li>
+                                                        </ul>
+                                                        <p>The information in these widgets come from the <a href="Panels.htm#reminders">Assignments panel</a>.</p>
+                                                        <h3>Records and drawings</h3>
+                                                        <p>The following widgets are for records and drawings:</p>
+                                                        <ul>
+                                                            <li><span class="Bold">Records - Various types</span> - The record that have the five selected workflow statuses. Some widgets display the average turnaround, which is the average number of days from the Created On date to the <a href="https://prod.projectsightapp.trimble.com/Web/Web%20Help%20Freemium/Content/Online_Help/Records/Record-Comments.htm#comment-types">resolution or answer</a> date.</li>
+                                                            <li><span class="Bold">Drawings</span> - The drawings that have the selected workflow statuses. Only the Current and Not Current statuses are available for dashboard widgets.</li>
+                                                        </ul>
+                                                        <h3>Projects</h3>
+                                                        <p>The Work Progress widget is based on the start and end dates from the <a href="https://prod.projectsightapp.trimble.com/Web/Web%20Help%20Freemium/Content/Online_Help/Projects/Projects.htm#open-form">Project form</a>. The progress is displayed if the start date is today or in the past.</p>
+                                                        <img src="../../Resources/Images/Online_Help/Dashboard-Project-Start-End.png" alt="Project start and end dates" class="Block" />
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownSection"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotSection MCDropDownHotSpot_ MCDropDownHotSpot_Section MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="14" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="custom-view-widgets"></a><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotSection MCDropDownHotSpot_ MCDropDownHotSpot_Section" href="Dashboards.htm#" aria-expanded="false">Custom view dashboard widgets</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <!--Add to sections that have more than one dropdown; js file is linked in the master page-->
+                                                        <div class="ExpandButton" title="Expand or collapse all content in this section">
+                                                            <img src="Dashboards.htm" alt="" />
+                                                        </div>
+                                                        <p>You can add your <a href="Web-Custom-Views.htm">custom views</a> as dashboard widgets.</p>
+                                                        <div class="Note">
+                                                            <ul>
+                                                                <li>You can add a shared custom view as a widget on your dashboard. If your access to the custom view is removed, the custom view widget is also removed from your dashboard.</li>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownExample"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotExample MCDropDownHotSpot_ MCDropDownHotSpot_Example MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example
+                                </a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div class="Container">
+                                                                            <img src="../../Resources/Images/Online_Help/Dashboard-Custom-View-Add.png" alt="Check box for custom view dashboard widget" class="Block" />
+                                                                            <p class="Caption">Add a custom view as a dashboard widget</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <li>Custom view widgets are removed automatically from the dashboard if you save them without any search filters.</li>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownExample"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotExample MCDropDownHotSpot_ MCDropDownHotSpot_Example MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Example
+                                </a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div class="Container">
+                                                                            <p>In the RFI module:</p>
+                                                                            <ol>
+                                                                                <li value="1">You apply the Assigned to Me search filter and group the RFIs by due date.</li>
+                                                                                <li value="2">You save the current view as a custom view called Due RFIs.</li>
+                                                                                <li value="3">You add the Due RFIs view to the dashboard.</li>
+                                                                                <li value="4">Later you remove the search filter but keep the grouping and save the Due RFIs view.</li>
+                                                                                <p>The Due RFIs view no longer appears on the dashboard or in the dashboard organizer.</p>
+                                                                            </ol>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To add a custom view widget to the dashboard</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1"><a href="Web-Custom-Views.htm#create-custom">Create a custom view</a> with at least one filter applied from the <span class="Bold">Search</span> panel.</li>
+                                                                    <li value="2"><span>In the <span class="Bold">View</span> list, select <img src="../../Resources/Images/Common/Icon-Gear.svg" alt="Settings icon" /> <span class="Bold">(Settings)</span> by the custom data view.</span>
+                                                                    </li>
+                                                                    <li value="3">In the <span class="Bold">View Settings</span> dialog, select the <span class="Bold">Include as widget on my dashboard</span> checkbox.</li>
+                                                                    <p>The custom view is added to the dashboard organizer and at the bottom of the dashboard.</p>
+                                                                    <li class="Optional" value="4">In the dashboard organizer, <a href="Dashboards.htm#organize">reorder the dashboard widgets.</a></li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To remove a custom view widget from the dashboard</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1"><span>In the <span class="Bold">View</span> list, select <img src="../../Resources/Images/Common/Icon-Gear.svg" alt="Settings icon" /> <span class="Bold">(Settings)</span> by the custom data view.</span>
+                                                                    </li>
+                                                                    <li value="2">In the <span class="Bold">View Settings</span> dialog, clear the <span class="Bold">Include as widget on my dashboard</span> checkbox.</li>
+                                                                    <p>The custom view is removed from the dashboard and the dashboard organizer.</p>
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown dropDownTip"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTip MCDropDownHotSpot_ MCDropDownHotSpot_Tip MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tip
+                                    </a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div class="Container">
+                                                                                <p>To keep the custom view widget in the dashboard organizer but not display it on the dashboard, you can select <img src="../../Resources/Images/Common/Icon-Table-X.svg" alt="Table X icon" /> <span class="Bold">(Remove)</span> on the widget.</p>
+                                                                                <img src="../../Resources/Images/Online_Help/Dashboard-Custom-View-Remove.png" alt="Remove custom view widget" class="Block" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownSection"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotSection MCDropDownHotSpot_ MCDropDownHotSpot_Section MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="14" width="16" alt="Closed" data-mc-alt2="Open" />Organizing dashboard widgets</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <!--Add to sections that have more than one dropdown; js file is linked in the master page-->
+                                                        <div class="ExpandButton" title="Expand or collapse all content in this section">
+                                                            <img src="Dashboards.htm" alt="" />
+                                                        </div>
+                                                        <p>In the dashboard organizer, you can add, reorder, and remove dashboard widgets.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown dropDownTip"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCDropDownHotSpot_Tip MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Default dashboard widgets</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <div class="Container">
+                                                                    <p>The following dashboard widgets are displayed in the dashboard by default:</p>
+                                                                    <ul>
+                                                                        <li>Overdue Items</li>
+                                                                        <li>Due Today Items</li>
+                                                                        <li>Due in Next 7 Days</li>
+                                                                        <li>Punch Items</li>
+                                                                        <li>RFIs</li>
+                                                                        <li>Submittals</li>
+                                                                        <li>Work Progress</li>
+                                                                        <li>Custom views</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To open the dashboard organizer</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ul>
+                                                                    <li>On the toolbar of the dashboard, select <img src="../../Resources/Images/Common/Icon-Widget-Organizer.svg" alt="Dashboard organizer toolbar button" /> <span class="Bold">(Dashboard organizer)</span>.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" /></a><a name="organize"></a><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">To organize the dashboard widgets</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">Open the dashboard organizer.</li>
+                                                                    <li value="2">To add widgets to the dashboard, select and drag widgets from the <span class="Bold">Available Widgets</span> section to the <span class="Bold">My Dashboard</span> section.</li>
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown dropDownTip"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTip MCDropDownHotSpot_ MCDropDownHotSpot_Tip MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tip
+                                    </a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div class="Container">
+                                                                                <p>To quickly find a widget in the <span class="Bold">Available Widgets</span> section, select a filter from the list.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <li value="3">To remove widgets from the dashboard, select  and drag widgets from the <span class="Bold">My Dashboard</span> section to the <span class="Bold">Available Widgets</span> section.</li>
+                                                                    <li value="4">In the <span class="Bold">My Dashboard</span> section, select and drag the widgets into the desired order.</li>
+                                                                    <p class="Note">The widgets are displayed in order from left to right and from top to bottom. Your screen size determines the number of widgets per row.</p>
+                                                                    <li value="5">Select <span class="Bold">Save</span>.</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To display all the default and custom view widgets on the dashboard</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">In the dashboard organizer, select <span class="Bold">Reset</span>.</li>
+                                                                    <p>All the default and custom view widgets are moved to the <span class="Bold">My Dashboard</span> section of the dashboard organizer.</p>
+                                                                    <li class="Optional" value="2">Select and drag the widgets into the desired order.</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To remove a widget from the dashboard</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ul>
+                                                                    <li>On the widget, select <img src="../../Resources/Images/Common/Icon-Table-X.svg" alt="Table X icon" /> <span class="Bold">(Remove)</span>.</li>
+                                                                    <p>In the dashboard organizer, the widget is moved from the <span class="Bold">My Dashboard</span> section to the <span class="Bold">Available Widgets</span> section.</p>
+                                                                    <img src="../../Resources/Images/Online_Help/Dashboard-Remove.png" alt="Remove widget from dashboard" class="Block" />
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown dropDownSection"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotSection MCDropDownHotSpot_ MCDropDownHotSpot_Section MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="14" width="16" alt="Closed" data-mc-alt2="Open" />Working with dashboard widgets</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <!--Add to sections that have more than one dropdown; js file is linked in the master page-->
+                                                        <div class="ExpandButton" title="Expand or collapse all content in this section">
+                                                            <img src="Dashboards.htm" alt="" />
+                                                        </div>
+                                                        <p>In the widgets, you can see more details or open a filtered list of items.</p>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown dropDownTip"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTip MCDropDownHotSpot_ MCDropDownHotSpot_Tip MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tip
+                        </a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <p class="Container">To see the latest information in the dashboard, you can refresh the page.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To see more details in a widget</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ul>
+                                                                    <li>Point your cursor to a place on the graph or chart.</li>
+                                                                    <p>The tooltip displays information such as the type and number of records.</p>
+                                                                    <img src="../../Resources/Images/Online_Help/Dashboard-Tooltip.png" alt="Dashboard widget tooltip" class="Block" />
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To filter the due items</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ul>
+                                                                    <li>On the assigned items widget, select <img src="../../Resources/Images/Common/Icon-Edit.svg" alt="Edit icon" /> <span class="Bold">(Edit)</span>, and then select an option.</li>
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown dropDownTip"><span class="MCDropDownHead dropDownHead"><a class="MCDropDownHotSpot dropDownHotspot dropDownHotspotTip MCDropDownHotSpot_ MCDropDownHotSpot_Tip MCHotSpotImage" href="Dashboards.htm#" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Tip
+                                    </a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div class="Container">
+                                                                                <p>If multiple record types are tied in the top three or top five, each one is displayed separately in the widget.</p>
+                                                                                <img src="../../Resources/Images/Online_Help/Dashboard-View-Options.png" alt="Dashboard widget options" class="Block" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To view a list of due items by type</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ol>
+                                                                    <li value="1">On the assigned items widget, select a section.</li>
+                                                                    <li class="Optional" value="2">To open an item, select the item in the list.</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To view a filtered list of records</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ul>
+                                                                    <li>On the widget, select the number under the workflow status.</li>
+                                                                    <img src="../../Resources/Images/Online_Help/Dashboard-Record-Filter-Link.png" alt="Link for filtered list" class="Block" />
+                                                                    <p class="Note">If a filtered list is unavailable for a status, the number isn't clickable.</p>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="Dashboards.htm#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="12" width="16" alt="Closed" data-mc-alt2="Open" />To open a record view from a widget</a></span>
+                                                            <div class="MCDropDownBody dropDownBody">
+                                                                <ul>
+                                                                    <li>Select the widget title.</li>
+                                                                    <img src="../../Resources/Images/Online_Help/Dashboard-Title-Link.png" alt="Record widget title" class="Block" />
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Footer">
+                                            <p><span class="mc-variable Primary.Copyright variable">© 2025, Trimble Inc. All rights reserved.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <script src="../../Resources/js/Expand-Collapse.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

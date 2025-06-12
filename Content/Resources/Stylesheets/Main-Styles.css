@@ -1,0 +1,2252 @@
+/*<meta conditions="" />*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+/*---Fonts---------------------------------------------------------------------------------------*/
+/*Open Sans font*/
+
+@font-face 
+{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face 
+{
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+	unicode-range: U +0000-00FF, U +0131, U +0152-0153, U +02C6, U +02DA, U +02DC, U +2000-206F, U +2074, U +20AC, U +2212, U +2215;
+}
+
+/*Material Icons*/
+
+@font-face 
+{
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.gstatic.com/s/materialicons/v70/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+	src: url(https://fonts.gstatic.com/s/materialicons/v88/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff) format('woff');
+}
+
+.material-icons
+{
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	font-feature-settings: 'liga';
+}
+
+/*--CSS variables---------------------------------------------------------------------------------------*/
+
+:root
+{
+	--Link: #004f83;
+	--LinkHover: #217cbb;
+	--LinkFocus: #217cbb;
+	--LinkVisited: #217cbb;
+	--HeadingMain: #004f83;
+	--HeadingSub: #0063a3;
+	--FontFamily: "Open Sans", sans-serif;
+	--Warning: #da212c;
+	--ActiveBlue: #0D6AA8;
+	--InactiveGray: #585c65;
+	--TextDefault: #363545;
+	--SelectedGreen: #00b050;
+}
+
+/*---Includes default font styles-----------------------------------------------------------------------*/
+
+body
+{
+	color: #363545;
+	font-family: "Open Sans", sans-serif;
+	line-height: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 13px;
+	background-color: #ffffff;
+}
+
+#contentBody
+{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.body-container
+{
+	margin-top: 40px;
+}
+
+/*---Headings-------------------------------------------------------------------------------------------*/
+
+h1
+{
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	color: #004f83;
+	font-size: 26px;
+}
+
+h2
+{
+	font-size: 18px;
+	margin-bottom: 6px;
+	margin-top: 20px;
+	color: #004f83;
+	font-weight: 400;
+}
+
+h3
+{
+	color: #0063a3;
+	font-size: 16px;
+	margin-top: 16px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-weight: 500;
+}
+
+h4
+{
+	color: #0063a3;
+	font-size: 13px;
+	margin-top: 12px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-weight: 500;
+}
+
+p.SubHeading
+{
+	color: #0063a3;
+	font-size: 14px;
+	margin-bottom: 4px;
+	margin-top: 18px;
+	font-weight: 500;
+}
+
+.Center
+{
+	text-align: center;
+}
+
+/*---Note for marking feature version---------------------------------------------------------------------*/
+
+.Feature-Version
+{
+	color: #004f83;
+	font-size: 12px;
+	font-style: italic;
+}
+
+/*---For hiding content in the output---------------------------------------------------------------------*/
+
+.Hide-Content
+{
+	display: none;
+}
+
+/*---Paragraphs-------------------------------------------------------------------------------------------*/
+
+ul,
+ol,
+p
+{
+	max-width: 1300px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 6px;
+	padding-bottom: 2px;
+}
+
+p.Copyright
+{
+	font-size: 9px;
+}
+
+p.Indent
+{
+	margin-left: 18px;
+}
+
+.Task
+{
+	color: #004f83;
+}
+
+.SmallFont
+{
+	font-size: 12px;
+	line-height: 12px;
+}
+
+span.mc-variable
+{
+	font-weight: normal;
+}
+
+/*For version number in release notes*/
+
+span.Version
+{
+	font-weight: normal;
+	font-size: 13px;
+	color: #72717c;
+}
+
+/*---Images------------------------------------------------------------------------------------------------*/
+
+img
+{
+	border: none;
+	border-style: none;
+	max-width: 100%;
+	max-height: auto;
+	vertical-align: text-bottom;
+}
+
+img.Block
+{
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+img.Border
+{
+	border: solid 1px #d7d7d7;
+}
+
+img.Radius
+{
+	border-radius: 3px;
+}
+
+img.Mobile
+{
+	max-width: 100%;
+	height: auto;
+}
+
+/*For mobile app links*/
+
+img.App-Icon
+{
+	width: 180px;
+	height: auto;
+}
+
+/*For images in a note or example*/
+
+div.Container > img
+{
+	max-width: 100%;
+}
+
+/*For images in subsections (used in release notes)*/
+
+div.SubSection > img
+{
+	max-width: 900px;
+}
+
+/*For images that are inserted into the text*/
+
+.BottomAlign
+{
+	vertical-align: text-bottom;
+}
+
+/*For image caption*/
+
+.Caption
+{
+	margin-top: 4px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+/*To resize images in a topic by the amount; format is <span class="Image"><img src="My-Image.png" alt="Description of my image" /> </span>*/
+
+span.Image
+{
+	display: inline-block;
+}
+
+span.Image img
+{
+	width: 85%;
+}
+
+.Flip	/*Flip an image or icon*/
+{
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+/*If rotate class is applied to icon variable, might need to adjust left padding for label that follows it.*/
+
+.RotateLeft	/*To rotate 90 degrees left*/
+{
+	position: absolute;
+	-ms-transform: rotate(-90deg);
+	/* IE 9 */
+	-webkit-transform: rotate(-90deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(-90deg);
+}
+
+.RotateRight	/*To rotate 90 degrees right*/
+{
+	position: absolute;
+	-ms-transform: rotate(90deg);
+	/* IE 9 */
+	-webkit-transform: rotate(90deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+/*--iframe (mainly for videos)----------------------------------------------------------------------------*/
+
+iframe
+{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*--SVG icons---------------------------------------------------------------------------------------------*/
+
+.svg-icon
+{
+	width: 22px;
+	height: 18px;
+}
+
+.svg-icon-alt
+{
+	width: 18px;
+	height: 18px;
+}
+
+/*---Icon variables---------------------------------------------------------------------------------------*/
+/*Applies the styles to the icons that use the Material Icons font by using an attribute selector. Might need to override the styles for specific icons.*/
+
+span[class*="Icons.Icon"]
+{
+	font-family: 'Material Icons';
+	font-size: 22px;
+	vertical-align: bottom;
+}
+
+/*For Annotation toolbar icons that use the Material Icons font*/
+
+span.AnnotationsIcon,
+span[class*="Annotations.Icon"]
+{
+	font-family: 'Material Icons';
+	font-size: 20px;
+	color: #eeeeee;
+	background-color: #111111;
+	border-radius: 3px;
+	padding: 2px;
+}
+
+/*Styles for annotation icons that use an .svg file*/
+
+.AnnotationSvg
+{
+	width: 24px;
+	height: 24px;
+	padding: 2px;
+	background-color: #111111;
+	border-radius: 3px;
+	margin-bottom: 1px;
+	margin-right-: 1px;
+}
+
+/*Styles for specific icons*/
+
+span[class*="Annotations.Icon-"]
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+span[class*="Icons.Icon-Columns"],
+span[class*="Icons.Icon-Refresh"]
+{
+	font-size: 22px;
+}
+
+span[class*="Icons.Icon-List-View"],
+span[class*="Icons.Icon-Tile-View"]
+{
+	font-size: 22px;
+}
+
+span.Icons.Icon-Highlight
+{
+	font-size: 20px;
+}
+
+span[class*="Icons.Icon-Permission-Read"]
+{
+	color: #2a78e4;
+}
+
+/*For icons in snippets*/
+
+.Inline-Icon
+{
+	vertical-align: middle;
+}
+
+/*Icon variables for table cells*/
+
+span[class*="Icons.Icon-Table-Check-Mark"],
+span[class*="Icons.Icon-Recalculate"]
+{
+	color: #003054;
+}
+
+span[class*="Icons.Icon-Table-X"]
+{
+	color: #b7b9c3;
+}
+
+span.Bold span[class*="mc-variable BCM.Col-"],
+span.Bold span[class*="mc-variable BCM.PCO-"]
+{
+	font-weight: bold;
+}
+
+span.Table-Asterisk
+{
+	color: #003054;
+}
+
+/*Applies the properties to all the labels by using an attribute selector.*/
+
+span[class*="Icons.Label"]
+{
+	font-weight: bold;
+}
+
+/*For variables in dropdown hotspots*/
+
+a.dropDownHotspot span[class*="Icons.Label"]
+{
+	font-weight: normal;
+}
+
+/*---Icons inserted in text-------------------------------------------------------------------------------------*/
+/*Material Icons*/
+
+span.MaterialIcons
+{
+	font-family: 'Material Icons';
+	font-size: 18px;
+	vertical-align: bottom;
+}
+
+/*Background for material icons (for contrast)*/
+
+.IconBackground
+{
+	font-family: 'Material Icons';
+	font-size: 16px;
+	background-color: #ffffff;
+	padding: 2px;
+	border-radius: 3px;
+	vertical-align: bottom;
+}
+
+/*---Snippet variables----------------------------------------------------------------------------------*/
+/*For all snippet variables; if the variable isn't bold in a specific case, use an inline style to override the style sheet.*/
+
+span[class*="Snippet"]
+{
+	font-weight: bold;
+}
+
+/*For snippet variables that start with "Item"*/
+
+span[class*="Snippet.Item"],
+span[class*="Snippet.Generic"]
+{
+	font-weight: normal;
+}
+
+/*--Links---------------------------------------------------------------------------------------------*/
+
+a,
+a.Next-Step,
+a.Next-Step:hover,
+a.Next-Step:focus
+{
+	text-decoration: underline;
+	color: #004f83;
+	cursor: pointer;
+}
+
+a,
+a:active,
+a:focus
+{
+	outline: none !important;
+}
+
+a:visited
+{
+	color: #217cbb;
+}
+
+a:focus
+{
+	color: #217cbb;
+}
+
+a:hover
+{
+	color: #217cbb;
+}
+
+/*---Links for showing/hiding content using .js files---*/
+
+.Content-Button a,
+.Toggle
+{
+	text-decoration: none;
+}
+
+.Content-Button
+{
+	cursor: pointer;
+}
+
+.Inactive a
+{
+	color: #363545;
+}
+
+.Active:hover
+{
+	color: #005596;
+}
+
+.Inactive:hover
+{
+	color: #363545;
+}
+
+.Active
+{
+	font-weight: bold;
+	background-image: url('../Images/Common/Button-Selected.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 26px;
+}
+
+.Inactive
+{
+	color: #363545;
+	font-weight: normal;
+	background-image: url('../Images/Common/Button-Deselected.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 26px;
+}
+
+/*--For in-topic filter (e.g., general record settings)--*/
+
+div.LinkContainer
+{
+	width: 330px;
+	margin-right: 20px;
+	padding: 10px;
+	padding-left: 14px;
+	border: solid 1px #cccccc;
+	box-shadow: 1px 1px #c2c1cf;
+	border-radius: 3px;
+	background-color: #f3f3f7;
+}
+
+/*---List-------------------------------------------------------------------------------------------*/
+
+ol,
+ul
+{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+ol
+{
+	list-style-image: none;
+	list-style: decimal;
+}
+
+/*Applies to nested ordered lists*/
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+/*Applies to nested ordered lists*/
+
+ol ol ol
+{
+	list-style-type: lower-roman;
+}
+
+/*Applies to nested unordered lists*/
+
+ul ul,
+ol ul,
+ol div ul ul
+{
+	list-style-type: circle;
+}
+
+ul ul ul,
+ol ul ul,
+ol ol ul
+{
+	list-style-type: square;
+}
+
+ol div ul,
+ul div ul
+{
+	list-style-type: disc;
+}
+
+/*Applies to lists that follow a p*/
+
+p + ol,
+p + ul
+{
+	margin-top: -4px;
+}
+
+ul
+{
+	margin-left: 40px;
+	padding: 0;
+	list-style: disc;
+}
+
+li
+{
+	orphans: 2;
+	widows: 2;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+/*For optional steps*/
+
+.Optional::before
+{
+	content: "Optional: ";
+	font-style: italic;
+}
+
+/*For sentences in a list*/
+
+ol > p,
+ul > p,
+ol > img + p,
+ul > img + p
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+/*For lists that are callouts on images; use same background color for numbers in topic and in image*/
+
+ol.Callout
+{
+	list-style: none;
+	counter-reset: item;
+	margin-left: -12px;
+	list-style-position: outside;
+}
+
+li.Callout
+{
+	counter-increment: item;
+	margin-bottom: 5px;
+}
+
+li.Callout:before
+{
+	margin-right: 6px;
+	content: counter(item);
+	background: #a51d25;
+	border-radius: 8px 2px 8px 8px;
+	color: white;
+	font-size: 12px;
+	width: 21px;
+	height: 21px;
+	text-align: center;
+	display: inline-block;
+}
+
+/*---Proxies----------------------------------------------------------------------------------------*/
+
+MadCap|bodyProxy
+{
+	margin-bottom: 20px;
+	br: before;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	font-style: italic;
+	mc-breadcrumbs-prefix: 'You are here: ';
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	mc-breadcrumbs-count: 4;
+	font-size: 13px;
+	color: #6a6976;
+}
+
+span.MCBreadcrumbsPrefix
+{
+	color: #6a6976;
+}
+
+MadCap|topicToolbarProxy
+{
+	margin-bottom: 20px;
+	float: right;
+}
+
+MadCap|tocProxy
+{
+	color: #064967;
+	font-size: 9pt;
+}
+
+MadCap|miniTocProxy
+{
+	text-transform: none;
+	mc-toc-depth: 1;
+	text-indent: 4px;
+	border-top-style: solid;
+	border-top-color: #404040;
+	color: #004f83;
+	margin-top: 20px;
+	line-height: 5px;
+	mc-auto-number-format: 'Related topics';
+	mc-auto-number-class: miniTOCBoxTitle;
+}
+
+div.MCMiniTocBox,
+div.MCMiniTocBox_0
+{
+	mc-auto-number-format: 'Related topics';
+	mc-auto-number-class: miniTocBoxTitle;
+}
+
+span.miniTocBoxTitle
+{
+	font-weight: bold;
+	font-size: 17px;
+	color: #003f87;
+	padding-top: 20px;
+}
+
+/*For related topic links*/
+
+p.MiniTOC1
+{
+	display: list-item;
+	list-style-type: disc;
+	margin-left: 20px;
+	text-decoration: underline;
+}
+
+/*---Master pages-----------------------------------------------------------------------------------------*/
+/*For div in master page that contains fixed breadcrumbs and toolbar proxies*/
+
+div.NoScroll
+{
+	height: 53px;
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	top: 60px;
+	left: 0;
+	border-bottom: solid 1px #bbbbbf;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+/*For fixed breadcrumbs and toolbar proxies*/
+
+.Fixed
+{
+	display: inline;
+	margin-top: 12px;
+}
+
+/*Adjust side menu so it fits with non-scrolling section at top*/
+
+.sidenav-container
+{
+	margin-top: 57px;
+}
+
+/*Footer*/
+
+.Footer
+{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0px 50px 0px 50px;
+	overflow: auto;
+	overflow-y: hidden;
+	height: 30px;
+}
+
+/*---Side navigation--------------------------------------------------------------------------------------*/
+/*Side navigation panel*/
+
+nav.sidenav-wrapper
+{
+	border-right: solid 1px #D0D0D7;
+}
+
+/*---Relationship tables (Related topics) ----------------------------------------------------------------*/
+
+MadCap|relationshipsHeading
+{
+	display: inline;
+	background: url('../Images/Common/Icon-Related-Topics.svg');
+	background-repeat: no-repeat;
+	font-family: inherit;
+	font-size: 13px;
+	font-weight: normal;
+	padding-left: 20px;
+	letter-spacing: 0.01em;
+}
+
+MadCap|relationshipsHeading.RelatedTopics
+{
+	mc-label: 'See also';
+	color: #004f83;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+MadCap|relationshipsItem
+{
+	font-size: 13px;
+	line-height: 15px;
+	margin-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/*Remove underline from links in related topics list*/
+
+p.RelatedTopicsItem_RelatedTopics_0 > a
+{
+	text-decoration: none;
+}
+
+MadCap|relationshipsProxy
+{
+	float: right;
+	display: block;
+	background-color: #f3f3f7;
+	width: 280px;
+	color: inherit;
+	border: solid 1px #cccccc;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 0px 10px 20px 10px;
+}
+
+/*---Examples, notes, and tips------------------------------------------------------------------------------*/
+/*For notes*/
+
+.Note,
+.Tip-Simple
+{
+	border-left: solid 2px #0063a3;
+	padding: 0px 5px;
+}
+
+.Note::before
+{
+	content: "Note: ";
+	font-weight: bold;
+	color: #0063a3;
+}
+
+.Tip-Simple::before
+{
+	content: "Tip: ";
+	font-weight: bold;
+	color: #0063a3;
+}
+
+div.dropDownExample + .Note
+{
+	margin-top: 12px;
+}
+
+/*For warnings*/
+
+.Warning
+{
+	border-left: solid 2px #da212c;
+	padding: 2px 5px;
+}
+
+.Warning::before
+{
+	content: "Warning: ";
+	font-weight: bold;
+	color: #da212c;
+}
+
+/*For div.Note that contains an unordered list*/
+
+div ul:only-child
+{
+	margin-left: 18px;
+}
+
+div ol:only-child
+{
+	margin-left: -20px;
+}
+
+/*Use for examples and tips*/
+
+div.Video,
+.Container
+{
+	display: inline-block;
+	max-width: 820px;
+	border: solid 1px #cccccc;
+	box-shadow: 1px 1px #c2c1cf;
+	border-radius: 3px;
+	padding: 6px 8px 6px 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-right: 20px;
+	background-color: #fbfbfb;
+	overflow: auto;
+}
+
+/*In tips and tables: Lists without an introductory sentence*/
+
+div.Container > ul,
+td > ul
+{
+	margin-left: 18px;
+	margin-bottom: 2px;
+}
+
+div.Container > ol,
+td > ol
+{
+	margin-left: -15px;
+	margin-bottom: 2px;
+}
+
+/*In div.Container that contain a list with an introductory sentence*/
+
+div.Container > p + ul
+{
+	margin-left: 36px;
+}
+
+/*For div.Container that only contains a <p>, so it looks the same as p.Container*/
+
+div.Container > p:only-child
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+/*For div.Container that contains an image as the last item*/
+
+div.Container > img:last-child
+{
+	margin-bottom: 6px;
+}
+
+/*For examples that are in tip dropdowns and tables;
+classes come from viewing the page source in the browser*/
+
+div.dropDownTip > div.dropDownBody > div.Container div.dropDownExample > div.dropDownBody > div.Container,
+div.dropDownTip > div.dropDownBody > div.Container div.dropDownExample > div.dropDownBody > p.Container
+{
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0px 0px;
+	margin-top: 0px;
+	padding: 0px;
+	background-color: transparent;
+}
+
+/*For internal notes added in a topic*/
+
+.Writer
+{
+	mc-auto-number-position: inside-head;
+	background-color: #e2e2e7;
+	border: solid 2px #363545;
+	border-radius: 3px;
+	position: relative;
+	padding: 6px 10px 6px 10px;
+	margin-top: 12px;
+	max-width: 600px;
+	mc-auto-number-format: "Writer's note ";
+	mc-auto-number-class: Writer-Label;
+	display: block;
+}
+
+/*Label for internal notes*/
+
+.Writer-Label
+{
+	font-weight: bold;
+	background-color: #e2e2e7;
+	position: absolute;
+	top: -16px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+/*---Dropdowns------------------------------------------------------------------------------------------*/
+
+MadCap|dropDown
+{
+	mc-closed-image: url('../Images/Common/Toggler-Closed.png');
+	mc-disabled: false;
+	mc-open-image: url('../Images/Common/Toggler-Open.png');
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+MadCap|dropDown.Example
+{
+	mc-closed-image: url('../Images/Common/Toggler-Alt-Closed.png');
+	mc-open-image: url('../Images/Common/Toggler-Alt-Open.png');
+}
+
+MadCap|dropDown.Tip
+{
+	mc-closed-image: url('../Images/Common/Toggler-Note-Closed.png');
+	mc-open-image: url('../Images/Common/Toggler-Note-Open.png');
+	margin-left: 0px;
+}
+
+MadCap|dropDown.Section
+{
+	mc-closed-image: url('../Images/Common/Toggler-Section-Closed.png');
+	mc-open-image: url('../Images/Common/Toggler-Section-Open.png');
+	margin-bottom: 10px;
+}
+
+MadCap|dropDown.SubSection
+{
+	mc-closed-image: url('../Images/Common/Toggler-SubSection-Closed.png');
+	mc-open-image: url('../Images/Common/Toggler-SubSection-Open.png');
+}
+
+MadCap|dropDownBody
+{
+	mc-disabled: false;
+}
+
+MadCap|dropDownHotspot
+{
+	color: #004f83;
+	mc-disabled: false;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+MadCap|dropDownHotspot:hover
+{
+	color: #217cbb;
+	text-decoration: underline;
+}
+
+MadCap|dropDownHotspot:focus
+{
+	outline: none;
+}
+
+MadCap|dropDownHotspot:visited,
+MadCap|dropDownHotspot.Tip:visited
+{
+	color: #004f83;
+}
+
+MadCap|dropDownHotspot.Example
+{
+	color: #4d6f33;
+}
+
+MadCap|dropDownHotspot.Tip
+{
+	
+}
+
+MadCap|dropDownHotspot.Example:hover
+{
+	color: #5e9331;
+}
+
+/*Same look as h2*/
+
+MadCap|dropDownHotspot.Section
+{
+	color: #004f83;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/*Same look as h3*/
+
+MadCap|dropDownHotspot.SubSection
+{
+	color: #0063a3;
+	font-size: 16px;
+}
+
+MadCap|dropDownHotspot.SubSection:hover,
+MadCap|dropDownHotspot.Section:hover
+{
+	color: #217cbb;
+}
+
+/*---Buttons for dropdowns--------------------------------------------------------------------------------*/
+
+div.ExpandButton,
+div.CollapseButton
+{
+	width: 36px;
+	margin-top: 10px;
+	margin-bottom: 8px;
+	padding: 8px 6px 6px 12px;
+	border-radius: 3px;
+	border: 1px solid #cacaca;
+	box-shadow: 1px 1px #b4b4b4;
+}
+
+.ExpandButton,
+.CollapseButton
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ExpandButton
+{
+	background-image: url('../Images/Common/Expand-Button.png');
+}
+
+.CollapseButton
+{
+	background-image: url('../Images/Common/Collapse-Button.png');
+}
+
+div.ExpandButton:hover,
+div.CollapseButton:hover
+{
+	background-color: #eaeaee;
+}
+
+/*---Popups------------------------------------------------------------------------------------------------*/
+/*Applies to footnotes in HTML5 output*/
+
+a.MCTextPopup.popup.popupHead.MCTextPopup_Closed,
+MadCap|popup
+{
+	color: #004f83;
+	text-decoration: underline;
+}
+
+MadCap|popupBody
+{
+	font-size: 12px;
+	background-color: #002d5b;
+	color: #ffffff;
+}
+
+a.MCTextPopup.popup.popupHead.MCTextPopup_Closed:hover,
+MadCap|popup:hover
+{
+	color: #217cbb;
+}
+
+/*---Togglers---------------------------------------------------------------------------------------------*/
+
+MadCap|toggler
+{
+	mc-closed-image: url('../Images/Common/Toggler-Closed.png');
+	mc-open-image: url('../Images/Common/Toggler-Open.png');
+	color: #004f83;
+}
+
+MadCap|toggler:hover
+{
+	color: #217cbb;
+}
+
+MadCap|toggler:visited
+{
+	color: #217cbb;
+}
+
+div.Toggler
+{
+	margin-left: 15px;
+}
+
+/*---Xref (cross-references)---------------------------------------------------------------------------------*/
+
+MadCap|xref
+{
+	mc-format: '{paratext}';
+	color: #004f83;
+	text-decoration: underline;
+}
+
+MadCap|xref.TOCPageNumber
+{
+	mc-format: '{paratext}';
+	color: #004f83;
+	text-decoration: underline;
+}
+
+MadCap|xref:focus
+{
+	mc-format: '{quote}{paratext}{quote}';
+}
+
+MadCap|xref:hover
+{
+	color: #217cbb;
+}
+
+MadCap|xref:visited
+{
+	color: #217cbb;
+}
+
+/*---Topic links with icons-------------------------------------------------------------------------------*/
+
+.Topic-Icon
+{
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	background-color: #197cb6;
+	padding: 10px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.Icon-Link
+{
+	text-decoration: none;
+}
+
+div.One div p:hover,
+div.Two div p:hover
+{
+	transform: scale(1.1);
+	margin-left: 20px;
+}
+
+.Icon-Link:visited
+{
+	color: #004f83;
+}
+
+/*---Release notes site-------------------------------------------------------------------------------------*/
+/*Master page for monthly release topics*/
+
+html.release
+{
+	mc-template-page: url('https://prod.projectsightapp.trimble.com/Web/Web%20Help%20Freemium/Content/Resources/MasterPages/Release-Notes-Site-Month.flmsp');
+}
+
+/*PDF button*/
+
+#pdf-button
+{
+	background-color: #004f83;
+	padding: 2px 2px 1px;
+	border-radius: 8px;
+	width: 120px;
+	text-align: center;
+}
+
+#pdf-button:hover
+{
+	background-color: #217cbb;
+}
+
+#pdf-link
+{
+	color: #ffffff;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+#pdf-icon
+{
+	vertical-align: middle;
+}
+
+/*Home tiles*/
+
+div.home-tiles-container
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+div.home-tiles
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 11.5px;
+	padding-right: 11.5px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+div.home-tiles > div:hover
+{
+	transform: scale(1.1);
+}
+
+div.home-tiles > div:nth-child(1),
+div.home-tiles > div:nth-child(2),
+div.home-tiles > div:nth-child(3),
+div.home-tiles > div:nth-child(4)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.home-tiles a
+{
+	text-decoration: none;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.home-tiles > h2
+{
+	margin-bottom: 1%;
+}
+
+/*--Release notes tiles--*/
+
+div.release-tiles
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	padding-top: 20px;
+}
+
+div.release-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.release-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.release-tiles > div
+{
+	width: 48%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	background-color: #f4f4f7;
+	border-radius: 10px;
+	text-align: center;
+}
+
+div.release-tiles > div:nth-child(1)
+{
+	float: left;
+	margin-right: 2%;
+}
+
+div.release-tiles > div:nth-child(2)
+{
+	float: right;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*---Characters---------------------------------------------------------------------------------------------*/
+
+code
+{
+	font: Courier New;
+	font-family: monospace;
+}
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Italics
+{
+	font-style: italic;
+}
+
+.Generic
+{
+	font-style: italic;
+}
+
+/*---Search--------------------------------------------------------------------------------------------------*/
+
+.search-field
+{
+	outline: none;
+}
+
+/*Hide topic url in search results*/
+
+div.url
+{
+	display: none;
+}
+
+/*Search result link*/
+
+ul#resultList li h3.title
+{
+	text-transform: none;
+}
+
+/*Search filter list - Remove extra space on left side*/
+
+div.search-filter-wrapper ul
+{
+	margin-left: 0px;
+}
+
+/*Search highlight colours*/
+
+span.SearchHighlight1
+{
+	background-color: #f7e79d;
+}
+
+span.SearchHighlight2
+{
+	background-color: #94d6eb;
+}
+
+span.SearchHighlight3
+{
+	background-color: #ebcfd1;
+}
+
+span.SearchHighlight4
+{
+	background-color: #c3ddab;
+}
+
+span.SearchHighlight5
+{
+	background-color: #cfeff9;
+}
+
+/*---Divs for layout---------------------------------------------------------------------------------------*/
+
+div.ImagesFloatLeft
+{
+	clear: both;
+	float: left;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+div.ImagesFloatRight
+{
+	clear: both;
+	float: right;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+div.KeepTogether
+{
+	page-break-inside: avoid;
+}
+
+div.sideContent
+{
+	float: right;
+}
+
+/*---Inline content--------------------------------------------------------------------------------------*/
+/*Use to place blocks of content inline and centered. Add widths to the divs in the topics.*/
+
+div.containerMain
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.floatLeft
+{
+	display: inline;
+	float: left;
+}
+
+div.floatRight
+{
+	display: inline;
+	float: right;
+}
+
+/*---Responsive layouts---------------------------------------------------------------------------------*/
+/*Main div*/
+
+div.One,
+div.Two
+{
+	display: block;
+	mc-grid-row: true;
+	width: 70%;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+div.One::before,
+div.Two::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.One::after,
+div.Two::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.One > div,
+div.Two > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0px;
+}
+
+/*Cells within main div*/
+
+div.One > div:nth-child(1),
+div.Two > div:nth-child(1),
+div.Two > div:nth-child(2)
+{
+	/*If needed, add styles (e.g., borders, etc.) that apply to each child div*/
+}
+
+div.One > div:nth-child(1)
+{
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+div.Two > div:nth-child(1),
+div.Two > div:nth-child(2)
+{
+	width: 46%;
+}
+
+div.Two > div:nth-child(1)
+{
+	/*margin-left: 3%;*/
+}
+
+div.Two > div:nth-child(2)
+{
+	margin-left: 2%;
+	margin-right: 3%;
+}
+
+div.dropDownTip > div.dropDownBody > div.Video
+{
+	max-width: 670px;
+}
+
+div.dropDownTip > div.dropDownBody > div.Two
+{
+	width: 100%;
+}
+
+div.dropDownTip > div.dropDownBody > div.Two > div:nth-child(2)
+{
+	padding-left: 20px;
+}
+
+/*---Tables------------------------------------------------------------------------------------------------*/
+/*Some styles may not work if a table stylesheet is already applied to the table.*/
+
+table
+{
+	vertical-align: top;
+	text-align: left;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+	border-collapse: collapse;
+	overflow: auto;
+}
+
+table.TableStyle-WeMi-Table
+{
+	background-color: transparent;
+}
+
+tbody
+{
+	font-size: inherit;
+}
+
+thead
+{
+	color: #000000;
+	background-color: #eeeeee;
+	height: 25px;
+}
+
+th
+{
+	padding: 5px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.Border
+{
+	border: 1px solid #d7d7d7;
+}
+
+tfoot
+{
+	color: #064967;
+}
+
+td
+{
+	padding: 5px;
+	vertical-align: top;
+	background-color: #fbfbfb;
+	height: 25px;
+}
+
+/*For centering content of cell*/
+
+.CellCenter
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*For bottom border of table cell*/
+
+.BorderBottom
+{
+	border-bottom-width: 3px;
+}
+
+/*For rotating table headers 90 degrees*/
+
+.Rotate
+{
+	vertical-align: middle;
+	text-align: center;
+	white-space: nowrap;
+	padding: 20px;
+}
+
+.Rotate div
+{
+	-moz-transform: rotate(-90.0deg);
+	/* FF3.5+ */
+	-o-transform: rotate(-90.0deg);
+	/* Opera 10.5 */
+	-webkit-transform: rotate(-90.0deg);
+	/* Saf3.1+, Chrome */
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+	margin-left: -10em;
+	margin-right: -10em;
+}
+
+/*For rotating table headers 45 degrees*/
+
+.RotateHeader
+{
+	vertical-align: middle;
+	white-space: nowrap;
+	padding-top: 24px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	-moz-transform: rotate(-45.0deg);
+	/* FF3.5+ */
+	-o-transform: rotate(-45.0deg);
+	/* Opera 10.5 */
+	-webkit-transform: rotate(-45.0deg);
+	/* Saf3.1+, Chrome */
+	transform: rotate(-45deg);
+	transform-origin: 50% 50%;
+	margin-bottom: 0px;
+	background-color: transparent;
+	border: none;
+	font-weight: 600;
+}
+
+.RotateHeader div
+{
+	width: 30px;
+}
+
+/*---Freemium and premium content-----------------------------------------------------------------------*/
+/*Freemium/premium content badge for topics*/
+
+.ContentBadge
+{
+	background-color: #0063a3;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	height: 23px;
+	text-align: center;
+	width: 90px;
+	display: inline;
+	padding: 4px 8px;
+	margin-right: 8px;
+}
+
+/*---Miscellaneous--------------------------------------------------------------------------------------*/
+
+address
+{
+	color: #064967;
+}
+
+/*For wide tables and images*/
+
+div.Wide
+{
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+head
+{
+	color: #064967;
+}
+
+hr
+{
+	width: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 1px;
+	border-color: #bfbfc6;
+	background-color: #bfbfc6;
+	border-style: none;
+	text-align: left;
+}
+
+/*Added so the background image only repeats horizontally*/
+
+nav.tab-bar
+{
+	background-repeat: repeat-x;
+}
+
+p.IndexHeading
+{
+	color: #064967;
+}
+
+/*Add radius*/
+
+.Radius
+{
+	border-radius: 3px;
+}
+
+ul.menu
+{
+	padding-bottom: 20px;
+}
+
+/*---Print----------------------------------------------------------------------------------------------*/
+
+@media print
+{
+	body
+	{
+		background-color: #ffffff;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		font-family: Arial;
+		line-height: 18px;
+	}
+
+	h1
+	{
+		margin-top: 2px;
+	}
+
+	h2
+	{
+		orphans: 3;
+	}
+
+	p
+	{
+		widows: 3;
+		orphans: 3;
+	}
+
+	p.Indent
+	{
+		padding-bottom: 0px;
+		margin-bottom: 2pt;
+		line-height: 10pt;
+		margin-top: 3pt;
+		padding-top: 0px;
+	}
+
+	p.MiniTOC1
+	{
+		color: #00467f;
+		list-style-type: square;
+		vertical-align: 10px;
+		display: none;
+	}
+
+	p.MiniTOC3
+	{
+		color: #00467f;
+		text-decoration: underline;
+		text-transform: none;
+	}
+
+	a
+	{
+		text-decoration: none;
+		color: #000000;
+	}
+
+	MadCap|miniTocProxy
+	{
+		display: list-item;
+		list-style-type: circle;
+	}
+
+	a.MiniTOC1:link
+	{
+		color: #003e74;
+		font-size: 14px;
+	}
+
+	a.MiniTOC1:visited
+	{
+		color: #07599b;
+		font-size: 14px;
+	}
+
+	a.MiniTOC1:focus
+	{
+		color: #990000;
+		font-size: 14px;
+	}
+
+	a.MiniTOC1:hover
+	{
+		color: #990000;
+		font-size: 14px;
+	}
+
+	td
+	{
+		border: solid 1px;
+		border-bottom: solid 1px;
+		border-left: solid 1px;
+		border-right: solid 1px;
+		border-top: solid 1px;
+		border-width: 1px;
+	}
+
+	a:link
+	{
+		color: #191970;
+	}
+
+	MadCap|xref
+	{
+		text-decoration: none;
+		mc-format: '{paratext}';
+	}
+
+	MadCap|xref.TOCPageNumber
+	{
+		mc-format: '{quote}{paratext}{quote} on page {page}';
+	}
+
+	img
+	{
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	.PageBreakBefore
+	{
+		page-break-before: always;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-weight: bold;
+	}
+
+	div.Container li
+	{
+		margin-left: 40px;
+	}
+
+	/*-------Title page------------------*/
+
+	.MainTitle
+	{
+		font-size: 40pt;
+		line-height: 44pt;
+		letter-spacing: 1px;
+		font-family: "Open Sans", sans-serif;
+		text-transform: uppercase;
+		padding-left: 0px;
+		margin-bottom: 20px;
+		color: #004f83;
+		vertical-align: middle;
+	}
+
+	img.HeaderIcon
+	{
+		margin-left: 0;
+		padding-right: 16px;
+		padding-bottom: 6px;
+		vertical-align: -2px;
+	}
+
+	.SecondLine
+	{
+		font-size: 22pt;
+		font-weight: 100;
+		text-transform: uppercase;
+		padding-left: 70px;
+		margin-top: 50px;
+		margin-bottom: 10px;
+		font-family: "Open Sans", sans-serif;
+		color: #004f83;
+	}
+
+	/*For lists that are callouts on images; use same background color for numbers in topic and in image*/
+
+	ol.Callout
+	{
+		list-style: decimal;
+		counter-reset: none;
+		list-style-position: initial;
+	}
+
+	li.Callout
+	{
+		counter-increment: none;
+	}
+
+	li.Callout:before
+	{
+		content: normal;
+		background-color: #ffffff;
+		border-radius: none;
+		color: #ffffff;
+		text-align: center;
+		display: none;
+	}
+}
+
+/*---For smartphone size---------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1100px)
+{
+	/*Hide breadcrumbs without moving content up*/
+
+	div.MCBreadcrumbsBox_Fixed_0
+	{
+		display: none !important;
+	}
+
+	/*Hide relationship table*/
+
+	div.sideContent
+	{
+		display: none !important;
+	}
+
+	/*Hide filter container*/
+
+	div.LinkContainer
+	{
+		display: none !important;
+	}
+
+	/*For topics with a filter container*/
+
+	div.All,
+	.dropDown.dropDownMargin
+	{
+		margin-left: 0px !important;
+	}
+
+	h2
+	{
+		color: #004f83;
+		font-size: 15px;
+		margin-bottom: 4px;
+		margin-top: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	/*For h2 on tabs*/
+
+	div.Tabs h2
+	{
+		display: block;
+	}
+
+	#contentBody
+	{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	/*Footer*/
+
+	.Footer
+	{
+		margin: 0px;
+	}
+
+	/*For lists, make indents smaller*/
+
+	div.dropDown > div.dropDownBody > ol
+	{
+		margin-left: -20px;
+	}
+
+	div.dropDown > div.dropDownBody > ol > ol
+	{
+		margin-left: -24px;
+	}
+
+	div.dropDown > div.dropDownBody > ul
+	{
+		margin-left: 18px;
+	}
+
+	div.dropDown > div.dropDownBody > ol > ul
+	{
+		margin-left: 14px;
+	}
+
+	.Container
+	{
+		max-width: 100%;
+	}
+
+	div.Container > img,
+	img
+	{
+		max-width: 100%;
+		max-height: auto;
+	}
+
+	/*---Responsive layouts--------------------*/
+
+	div.One,
+	div.Two,
+	div.Three,
+	div.Four
+	{
+		display: block;
+		width: 96%;
+		margin-bottom: 0%;
+	}
+
+	/*Adjust width of cells within main div*/
+
+	div.One > div:nth-child(1),
+	div.Two > div:nth-child(1),
+	div.Two > div:nth-child(2),
+	div.Three > div:nth-child(1),
+	div.Three > div:nth-child(2),
+	div.Three > div:nth-child(3),
+	div.Four > div:nth-child(1),
+	div.Four > div:nth-child(2),
+	div.Four > div:nth-child(3),
+	div.Four > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-bottom: 10px;
+	}
+
+	div.dropDownTip > div.dropDownBody > div.Container
+	{
+		max-width: 370px;
+	}
+
+	div.dropDownTip > div.dropDownBody > div.Two > div:nth-child(2)
+	{
+		padding-left: 10px;
+	}
+
+	/*Release notes site*/
+
+	div.release-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 20px;
+	}
+
+	div.release-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 20px;
+	}
+
+	div.home-tiles > div:nth-child(1),
+	div.home-tiles > div:nth-child(2),
+	div.home-tiles > div:nth-child(3),
+	div.home-tiles > div:nth-child(4)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+}
+
+/*---For small screens---------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 550px)
+{
+	/*Hide content in fixed section*/
+
+	span#results-heading
+	{
+		display: none !important;
+	}
+
+	img.Mobile
+	{
+		width: 95%;
+		height: 95%;
+	}
+}
+
